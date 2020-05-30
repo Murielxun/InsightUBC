@@ -1,0 +1,48 @@
+{
+    "title": "not in is, invalid",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "OR": [
+                        {
+                            "GT": {
+                                "courses_avg": 90
+                            }
+                        },
+                        {
+                            "LT": {
+                                "courses_pass": 90
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "adhe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 95
+                    }
+                },
+                {
+                    "IS": {
+                        "NOT": {
+                            "courses_dept": "cpsc"
+                        }
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

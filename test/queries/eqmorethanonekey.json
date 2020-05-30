@@ -1,0 +1,41 @@
+{
+    "title": "there are more than 1 key in eq",
+    "query": {
+        "WHERE": {
+            "WHERE": {
+                "OR": [
+                    {
+                        "AND": [
+                            {
+                                "GT": {
+                                    "courses_avg": 90
+                                }
+                            },
+                            {
+                                "IS": {
+                                    "courses_dept": "adhe"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "EQ": {
+                            "courses_avg": 95,
+                            "courses_pass": 90
+                        }
+                    }
+                ]
+            },
+            "OPTIONS": {
+                "COLUMNS": [
+                    "courses_dept",
+                    "courses_id",
+                    "courses_avg"
+                ],
+                "ORDER": "courses_avg"
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

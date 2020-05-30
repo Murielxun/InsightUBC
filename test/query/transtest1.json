@@ -1,0 +1,41 @@
+{
+    "title": "transtest for c2",
+    "query":{
+        "WHERE": {
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor",
+                "courses_id",
+                "courses_dept",
+                "courses_uuid",
+                "courses_avg",
+                "maxAVG"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "maxAVG"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_instructor",
+                "courses_id",
+                "courses_dept",
+                "courses_uuid",
+                "courses_avg"
+            ],
+            "APPLY": [
+                {
+                    "maxAVG": {
+                        "MAX": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

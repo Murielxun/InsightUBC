@@ -1,0 +1,35 @@
+{
+    "title": "using not so the the result is too large",
+    "query": {
+    "WHERE": {
+        "NOT": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_avg": 99
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 98
+                    }
+                }
+
+            ]
+        }
+    },
+    "OPTIONS": {
+        "COLUMNS": [
+            "courses_dept",
+            "courses_title",
+            "courses_uuid",
+            "courses_avg",
+            "courses_audit"
+        ],
+        "ORDER": "courses_avg"
+    }
+},
+
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

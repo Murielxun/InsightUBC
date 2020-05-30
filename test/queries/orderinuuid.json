@@ -1,0 +1,20 @@
+{
+    "title": "order in uuid",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 2
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "courses_audit",
+                "courses_pass",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_title":"prpty,ident&uses","courses_audit":0,"courses_pass":0,"courses_uuid":"49835"},{"courses_title":"in land food com","courses_audit":0,"courses_pass":0,"courses_uuid":"56402"},{"courses_title":"in land food com","courses_audit":0,"courses_pass":0,"courses_uuid":"56403"},{"courses_title":"forest ecology","courses_audit":0,"courses_pass":0,"courses_uuid":"89536"}]}

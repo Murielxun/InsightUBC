@@ -1,0 +1,19 @@
+{
+    "title": "reference to non-exist dataset",
+    "query": {
+        "WHERE": {
+            "GT":{
+                "onevalid_fail": 300
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "onevalid_fail",
+                "onevalid_avg"
+            ],
+            "ORDER": "onevalid_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

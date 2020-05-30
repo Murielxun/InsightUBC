@@ -1,0 +1,20 @@
+{
+    "title": "there are more than 1 key in lt",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 2,
+                "courses_pass": 90
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

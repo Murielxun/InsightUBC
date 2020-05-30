@@ -1,0 +1,19 @@
+{
+    "title": "reverse order of order and columns",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 2
+            }
+        },
+        "OPTIONS": {
+            "ORDER": "courses_avg",
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

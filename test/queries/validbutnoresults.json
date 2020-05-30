@@ -1,0 +1,19 @@
+{
+    "title": "courses fail > 300, no results",
+    "query": {
+        "WHERE": {
+            "GT":{
+                "courses_fail": 300
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_fail",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[]
+}

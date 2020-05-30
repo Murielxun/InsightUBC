@@ -1,0 +1,21 @@
+{
+    "title": "typo in where",
+    "query": {
+        "where": {
+            "IS": {
+                "courses_dept": "visa"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_pass",
+                "courses_fail"
+            ],
+            "ORDER": "courses_fail"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
+

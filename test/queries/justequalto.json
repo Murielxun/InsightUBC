@@ -1,0 +1,22 @@
+{
+    "title": "just equal to",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_avg": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_uuid",
+                "courses_pass",
+                "courses_fail",
+                "courses_id"
+            ],
+            "ORDER": "courses_pass"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"lfs","courses_avg":0,"courses_uuid":"56403","courses_pass":0,"courses_fail":1,"courses_id":"100"},{"courses_dept":"lfs","courses_avg":0,"courses_uuid":"56402","courses_pass":0,"courses_fail":1,"courses_id":"100"},{"courses_dept":"frst","courses_avg":0,"courses_uuid":"89536","courses_pass":0,"courses_fail":1,"courses_id":"202"}]}

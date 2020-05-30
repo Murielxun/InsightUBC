@@ -1,0 +1,19 @@
+{
+    "title": "typo in dataset name, courses -> coorses",
+    "query": {
+        "WHERE": {
+            "GT":{
+                "coorses_fail": 300
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_fail",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

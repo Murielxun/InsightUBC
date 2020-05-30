@@ -1,0 +1,31 @@
+{
+    "title": "where at the end, reverse order of columns and order, but valid",
+    "query": {
+        "OPTIONS": {
+            "ORDER": "courses_avg",
+            "COLUMNS": [
+                "courses_avg"
+            ]
+        },
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_avg": 90
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "cpsc"
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 80
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_avg":80},{"courses_avg":80}]}

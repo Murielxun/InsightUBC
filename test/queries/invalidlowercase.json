@@ -1,0 +1,48 @@
+{
+    "title": "lower case exists",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "OR": [
+                        {
+                            "GT": {
+                                "courses_avg": 90
+                            }
+                        },
+                        {
+                            "lt": {
+                                "courses_pass": 90
+                            }
+                        },
+                        {
+                            "Is": {
+                                "courses_dept": "adhe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 95
+                    }
+                },
+                {
+                    "NOT": {
+                        "IS": {
+                            "courses_dept": "cpsc"
+                        }
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

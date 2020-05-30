@@ -1,0 +1,31 @@
+{
+    "title": "where at the end, but valid",
+    "query": {
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        },
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_avg": 90
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "cpsc"
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 80
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_avg":80},{"courses_avg":80}]}

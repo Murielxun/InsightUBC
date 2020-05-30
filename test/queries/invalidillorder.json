@@ -1,0 +1,19 @@
+{
+    "title": "typo in order key",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_fail": 300
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_fail",
+                "courses_avg"
+            ],
+            "ORDER": "courses_ag"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

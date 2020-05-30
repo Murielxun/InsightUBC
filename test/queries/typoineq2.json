@@ -1,0 +1,19 @@
+{
+    "title": "just eq, typo1",
+    "query": {
+        "WHERE": {
+            "Eq": {
+                "courses_avg": 2
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

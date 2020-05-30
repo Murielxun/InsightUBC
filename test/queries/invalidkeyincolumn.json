@@ -1,0 +1,21 @@
+{
+    "title": "invalid key in column",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 2
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "courses_year",
+                "courses_pass",
+                "courses_uui"
+            ],
+            "ORDER": "courses_year"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
